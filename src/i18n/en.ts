@@ -284,7 +284,7 @@ export const en = {
   'about.title': 'About this project',
   'about.history.title': 'Where it comes from',
   'about.history.body':
-    'Fashion Companion was first built in 2024 as “Smart Closet”, a full-stack university project by Negin Mousavi. In 2026 it was redesigned and rebuilt from scratch as this browser-only version.',
+    'Fashion Companion was first built in 2024 as “Smart Closet”, a full-stack project by Negin Mousavi. In 2026 it was redesigned and rebuilt from scratch as this browser-only version.',
   'about.history.original': 'The original 2024 code:',
   'about.history.frontend': 'Smart-Closet-Frontend',
   'about.history.backend': 'Smart-Closet-Backend',

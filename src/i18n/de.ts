@@ -285,7 +285,7 @@ export const de: Record<MessageKey, string> = {
   'about.title': 'Über dieses Projekt',
   'about.history.title': 'Woher es kommt',
   'about.history.body':
-    'Fashion Companion entstand 2024 als „Smart Closet“, ein Full-Stack-Universitätsprojekt von Negin Mousavi. 2026 wurde es neu gestaltet und von Grund auf als diese reine Browser-Version neu gebaut.',
+    'Fashion Companion entstand 2024 als „Smart Closet“, ein Full-Stack-Projekt von Negin Mousavi. 2026 wurde es neu gestaltet und von Grund auf als diese reine Browser-Version neu gebaut.',
   'about.history.original': 'Der ursprüngliche Code von 2024:',
   'about.history.frontend': 'Smart-Closet-Frontend',
   'about.history.backend': 'Smart-Closet-Backend',

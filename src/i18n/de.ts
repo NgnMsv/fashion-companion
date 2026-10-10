@@ -283,15 +283,9 @@ export const de: Record<MessageKey, string> = {
   'stylePage.saved': 'Stil gespeichert.',
 
   'about.title': 'Über dieses Projekt',
-  'about.history.title': 'Woher es kommt',
-  'about.history.body':
-    'Fashion Companion entstand 2024 als „Smart Closet“, ein Full-Stack-Projekt von Negin Mousavi. 2026 wurde es neu gestaltet und von Grund auf als diese reine Browser-Version neu gebaut.',
-  'about.history.original': 'Der ursprüngliche Code von 2024:',
-  'about.history.frontend': 'Smart-Closet-Frontend',
-  'about.history.backend': 'Smart-Closet-Backend',
   'about.how.title': 'Wie es entscheidet',
   'about.how.body':
-    'Jede mögliche Kombination deiner verfügbaren Teile durchläuft einen Entscheidungsbaum: eine feste, von Hand geschriebene Liste von Ja/Nein-Fragen. Die Antworten führen zu einem Urteil, und genau diese Antworten siehst du unter „Warum dieses Outfit?“. Es gibt kein maschinelles Lernen, und nichts wird an einen Server gesendet.',
+    'Jede mögliche Kombination deiner verfügbaren Teile durchläuft einen Entscheidungsbaum: eine feste Liste von Ja/Nein-Fragen. Die Antworten führen zu einem Urteil, und genau diese Antworten siehst du unter „Warum dieses Outfit?“. Nichts wird an einen Server gesendet.',
   'about.tree.title': 'Der ganze Entscheidungsbaum',
   'about.privacy.title': 'Deine Daten',
   'about.privacy.body':
@@ -302,7 +296,6 @@ export const de: Record<MessageKey, string> = {
   'about.sample': 'Beispiel-Kleiderschrank laden',
   'about.sampleConfirm': 'Das ersetzt deinen aktuellen Kleiderschrank durch die Beispielteile.',
   'about.sampleYes': 'Meinen Kleiderschrank ersetzen',
-  'about.opensNewTab': '(öffnet in neuem Tab)',
 
   'sample.white-tee': 'Weißes T-Shirt',
   'sample.black-tee': 'Schwarzes T-Shirt',

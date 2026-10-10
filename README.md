@@ -6,11 +6,11 @@ A closet manager that suggests outfits and shows the exact rules behind every su
 
 ![An outfit card with the "Why this outfit?" panel open, listing six questions and their answers](docs/screenshots/why.webp)
 
-Originally built in 2024 as "Smart Closet" ([frontend](https://github.com/NgnMsv/Smart-Closet-Frontend), [backend](https://github.com/NgnMsv/Smart-Closet-Backend)); redesigned and rebuilt from scratch in 2026. What changed and why is in [REIMPLEMENTATION_NOTES.md](REIMPLEMENTATION_NOTES.md). How it works is in [ARCHITECTURE.md](ARCHITECTURE.md).
+How it works is in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Features
 
-- **Outfits for an occasion and a season.** Every combination of your available pieces is judged by a hand-written decision tree; the best three are shown.
+- **Outfits for an occasion and a season.** Every combination of your available pieces is judged by a decision tree; the best three are shown.
 - **"Why this outfit?"** Each look lists the questions the tree asked, the answer to each, and the verdict. You can open the whole tree with the taken path highlighted.
 - **Wardrobe.** A grid grouped by category, with search and filters for category, colour, season and dress level. Add, edit and delete pieces in one dialog.
 - **Your own photos.** Optional, scaled down and stored in the browser only. The colour is read from the photo.
@@ -58,7 +58,7 @@ npm run preview   # http://localhost:4174/fashion-companion/
 
 | Command             | What it does                                                     |
 | ------------------- | ---------------------------------------------------------------- |
-| `npm run test`      | 165 unit and component tests (Vitest, React Testing Library)     |
+| `npm run test`      | 164 unit and component tests (Vitest, React Testing Library)     |
 | `npm run e2e`       | 8 end-to-end scenarios on desktop and phone size (Playwright); run `npm run build` first |
 | `npm run lint`      | ESLint                                                           |
 | `npm run typecheck` | TypeScript                                                       |

@@ -282,15 +282,9 @@ export const en = {
 
   // About
   'about.title': 'About this project',
-  'about.history.title': 'Where it comes from',
-  'about.history.body':
-    'Fashion Companion was first built in 2024 as “Smart Closet”, a full-stack project by Negin Mousavi. In 2026 it was redesigned and rebuilt from scratch as this browser-only version.',
-  'about.history.original': 'The original 2024 code:',
-  'about.history.frontend': 'Smart-Closet-Frontend',
-  'about.history.backend': 'Smart-Closet-Backend',
   'about.how.title': 'How it decides',
   'about.how.body':
-    'Every possible combination of your available pieces is run through one decision tree: a fixed list of yes/no questions written by hand. The answers lead to a verdict, and the same answers are what you see under “Why this outfit?”. There is no machine learning and nothing is sent to a server.',
+    'Every possible combination of your available pieces is run through one decision tree: a fixed list of yes/no questions. The answers lead to a verdict, and the same answers are what you see under “Why this outfit?”. Nothing is sent to a server.',
   'about.tree.title': 'The whole decision tree',
   'about.privacy.title': 'Your data',
   'about.privacy.body':
@@ -301,7 +295,6 @@ export const en = {
   'about.sample': 'Load sample wardrobe',
   'about.sampleConfirm': 'This replaces your current wardrobe with the sample pieces.',
   'about.sampleYes': 'Replace my wardrobe',
-  'about.opensNewTab': '(opens in a new tab)',
 
   // Sample wardrobe
   'sample.white-tee': 'White T-shirt',

@@ -8,33 +8,12 @@ import { navigate, ROUTES } from '../../lib/router.tsx'
 import { buttonClass } from '../../ui/controls.tsx'
 import { TreeDiagram } from '../outfits/TreeDiagram.tsx'
 
-export const ORIGINAL_REPOS = {
-  frontend: 'https://github.com/NgnMsv/Smart-Closet-Frontend',
-  backend: 'https://github.com/NgnMsv/Smart-Closet-Backend',
-} as const
-
 function Block({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="grid gap-3 border-t border-fg py-8 md:grid-cols-[14rem_1fr] md:gap-10">
       <h2 className="font-display text-2xl font-semibold tracking-tight">{title}</h2>
       <div className="max-w-2xl space-y-4 text-pretty">{children}</div>
     </section>
-  )
-}
-
-function ExternalLink({ href, children }: { href: string; children: ReactNode }) {
-  const { t } = useI18n()
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-medium underline decoration-fg/40 underline-offset-4 hover:decoration-fg"
-    >
-      {children}
-      <span aria-hidden="true"> ↗</span>
-      <span className="sr-only"> {t('about.opensNewTab')}</span>
-    </a>
   )
 }
 
@@ -102,19 +81,6 @@ export function AboutPage({ preferences }: { preferences: Preferences | null }) 
         {t('about.title')}
       </h1>
       <p className="mt-4 mb-10 max-w-2xl text-lg text-muted">{t('app.tagline')}</p>
-
-      <Block title={t('about.history.title')}>
-        <p>{t('about.history.body')}</p>
-        <p>{t('about.history.original')}</p>
-        <ul className="list-disc space-y-1 pl-5">
-          <li>
-            <ExternalLink href={ORIGINAL_REPOS.frontend}>{t('about.history.frontend')}</ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href={ORIGINAL_REPOS.backend}>{t('about.history.backend')}</ExternalLink>
-          </li>
-        </ul>
-      </Block>
 
       <Block title={t('about.how.title')}>
         <p>{t('about.how.body')}</p>

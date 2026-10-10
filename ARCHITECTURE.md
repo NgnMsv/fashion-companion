@@ -45,7 +45,7 @@ src/
     outfits/                  Looks page, outfit card, "Why this outfit?" panel, tree diagram
     wardrobe/                 Grid, filters, add/edit form, photo handling
     style/                    "My style" page (edit preferences)
-    about/                    Project history, the full tree, data reset
+    about/                    How it decides, the full tree, data reset
   i18n/                       en.ts, de.ts, and a small typed translate function
   lib/                        router.tsx (client-side routing), theme.ts
   ui/                         Shared pieces: Garment drawings, buttons, dialog, states
@@ -228,14 +228,14 @@ Component tests use the in-memory repository, which is possible because of the r
 | Tailwind CSS                  | Styles next to the markup; both themes from one set of tokens                               |
 | TanStack Query                | Caching, loading/error states and refresh-after-write over an async repository              |
 | IndexedDB                     | Stores photos as Blobs, asynchronously, with enough quota                                   |
-| Vitest                        | Shares Vite's config; fast enough to run 165 tests in about two seconds                     |
+| Vitest                        | Shares Vite's config; fast enough to run 164 tests in about two seconds                     |
 | React Testing Library         | Tests find elements by role and name, which doubles as an accessibility check               |
 | Playwright                    | Tests the real build, real IndexedDB, and real keyboard behaviour                           |
 | GitHub Actions + Pages        | Free, next to the code, and every deploy is gated by the full test suite                    |
 
 ## Decisions I can explain in an interview
 
-- **A hand-written tree instead of a trained model.** Every rule can be read, tested and explained to the user. The 2024 version trained a model per user, which needed a server and could not say why it liked an outfit.
+- **The tree is data.** Question nodes and leaf nodes, walked by one generic function. Every rule can be read, tested and explained to the user.
 - **The explanation is the evaluation.** The panel shows the recorded path, not a description written separately.
 - **A pure engine.** No React, no storage, no randomness. Same input, same output.
 - **A repository interface.** Storage can be swapped (tests already do), and a real API would slot in the same way.

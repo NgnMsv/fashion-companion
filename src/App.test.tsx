@@ -149,22 +149,6 @@ describe('navigation and settings', () => {
 })
 
 describe('About page', () => {
-  it('says when the project was built and links to both original repositories', async () => {
-    renderApp({ path: '/about/' })
-
-    expect(await screen.findByText(/first built in 2024/)).toHaveTextContent(
-      /redesigned and rebuilt from scratch/,
-    )
-    expect(screen.getByRole('link', { name: /Smart-Closet-Frontend/ })).toHaveAttribute(
-      'href',
-      'https://github.com/NgnMsv/Smart-Closet-Frontend',
-    )
-    expect(screen.getByRole('link', { name: /Smart-Closet-Backend/ })).toHaveAttribute(
-      'href',
-      'https://github.com/NgnMsv/Smart-Closet-Backend',
-    )
-  })
-
   it('shows the whole decision tree', async () => {
     renderApp({ path: '/about/' })
 
